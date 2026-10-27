@@ -13,5 +13,9 @@ public class Main {
                 "Archive initialized with sample IDs.");
 
                 System.out.println("Height of the archive: " + archive.height());
+        System.out.print("In-order traversal: ");
+        archive.inOrderTraversal();
+        System.out.print("Pre-order traversal: ");
+        archive.preOrderTraversal();
     }
 }

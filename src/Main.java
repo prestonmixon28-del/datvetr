@@ -11,5 +11,7 @@ public class Main {
 
         System.out.println(
                 "Archive initialized with sample IDs.");
+
+                System.out.println("Height of the archive: " + archive.height());
     }
 }

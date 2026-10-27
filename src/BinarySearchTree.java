@@ -22,4 +22,19 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
         return node;
     }
+
+    public int height() {
+    return recHeight(root);
+}
+
+private int recHeight(BSTNode<T> node) {
+    if (node == null) {
+        return -1;
+    }
+
+    int leftHeight = recHeight(node.getLeft());
+    int rightHeight = recHeight(node.getRight());
+
+    return 1 + Math.max(leftHeight, rightHeight);
+}
 }
